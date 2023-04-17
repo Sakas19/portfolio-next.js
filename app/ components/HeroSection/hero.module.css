@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 16px;
+  animation: fadeIn 1.5s;
+}
+
+
+.imageContainer {
+margin-top: 16px;
+width: 325px;
+height: 325px;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.image {
+position: absolute;
+}
+
+.rounded {
+border-radius: 50%;
+}
+
+.textContainer {
+margin-top: 16px;
+width: 100%;
+}
+
+.title {
+font-size: 4rem;
+}
+
+.subtitle {
+font-size: 1.5rem;
+}
+
+.highlight {
+color: #06b6d4;
+}
+
+.button {
+margin-top: 16px;
+padding: 12px 24px;
+}
+
+.arrowContainer {
+margin-top: 16px;
+}
+
+.arrow {
+animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+0% {
+transform: translateY(0px);
+}
+50% {
+transform: translateY(10px);
+}
+100% {
+transform: translateY(0px);
+}
+}
