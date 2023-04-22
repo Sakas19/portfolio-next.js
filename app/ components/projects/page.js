@@ -1,29 +1,30 @@
 import React from "react";
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
+import Image from 'next/image'
 
 const projects = [
   {
-    name: "Thankful Thoughts",
+    name: "First react project",
     description:
-      "ThankfulThoughts is a web app that generates an appreciative sentence of something or someone you are thankful for.",
+      "This is the first assignment that we done with vite",
     image: "/project-1.png",
-    github: "https://github.com/hqasmei/thankful-thoughts",
-    link: "https://thankfulthoughts.io/",
+    github: "https://github.com/Sakas19/project1",
+    link: "/",
   },
   {
-    name: "PlatoIO",
+    name: "Seceond react project",
     description: "PlatoIO is a to do list app that built using the PERN stack.",
-    image: "/platoio.png",
-    github: "https://github.com/hqasmei/platoio",
-    link: "https://platoio.com/register",
+    image: "/",
+    github: "https://github.com/Sakas19/Assignment-2-React",
+    link: "/",
   },
   {
-    name: "Kator Family Photos",
+    name: "Third react project",
     description:
-      "Kator Family Photos is a photos and video digitization service in the LA area.",
-    image: "/familyphotos.png",
-    github: "https://github.com/hqasmei/katorfamilyphotos",
-    link: "https://katorfamilyphotos.com/",
+      "This is my third project as part of my assigmnet for reaxt course",
+    image: "/",
+    github: "https://github.com/Sakas19/cocktail-mocktail",
+    link: "cocktail-mocktail-1d19.vercel.app"
   },
 ];
 
@@ -37,11 +38,6 @@ const ProjectsSection = () => {
           <div key={idx} className="project">
             <div className="project__image-container">
               <a href={project.link} target="_blank" rel="noopener noreferrer">
-                <img
-                  className="project__image"
-                  src={project.image}
-                  alt={project.name}
-                />
               </a>
             </div>
             <div className="project__content">

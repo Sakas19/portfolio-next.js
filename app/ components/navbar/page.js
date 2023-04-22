@@ -25,8 +25,9 @@ const NAV_ITEMS = [
 export default function Navbar() {
   const { systemTheme, theme, setTheme } = useTheme();
   const currentTheme = theme === "system" ? systemTheme : theme;
-  const [navbar, setNavbar] = useState(false);
   const pathname = usePathname()
+  const [navbar, setNavbar] = useState(false);
+  
   
   return (
     <header className={styles.header}>

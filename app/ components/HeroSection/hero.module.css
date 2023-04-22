@@ -1,71 +1,76 @@
 .container {
   display: flex;
-  flex-direction: column;
-  text-align: center;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+  animation: fadeIn 1s;
+  animation-delay: 2s;
   margin-top: 10px;
-  padding: 16px;
-  animation: fadeIn 1.5s;
+  padding-bottom: 16px;
+  padding-top: 16px;
 }
 
-
-.imageContainer {
-margin-top: 16px;
-width: 325px;
-height: 325px;
-position: relative;
-display: flex;
-justify-content: center;
-align-items: center;
+@media (min-width: 640px) {
+  .container {
+    padding-top: 15px;
+    padding-bottom: 32px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
-.image {
-position: absolute;
+@media (min-width: 768px) {
+  .container {
+    padding-top: 48px;
+  }
 }
 
-.rounded {
-border-radius: 50%;
+.image-wrapper {
+  margin-top: 2rem;
+  width: 50%;
 }
 
-.textContainer {
-margin-top: 16px;
-width: 100%;
+@media (min-width: 640px) {
+  .image-wrapper {
+    margin-top: 0;
+    width: auto;
+  }
 }
 
 .title {
-font-size: 4rem;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-top: 1rem;
 }
 
-.subtitle {
-font-size: 1.5rem;
+@media (min-width: 640px) {
+  .title {
+    font-size: 4rem;
+  }
+}
+
+.description {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 640px) {
+  .description {
+    font-size: 2rem;
+  }
 }
 
 .highlight {
-color: #06b6d4;
-}
-
-.button {
-margin-top: 16px;
-padding: 12px 24px;
-}
-
-.arrowContainer {
-margin-top: 16px;
+  font-weight: bold;
+  color: #38b2ac;
 }
 
 .arrow {
-animation: bounce 1s infinite;
-}
-
-@keyframes bounce {
-0% {
-transform: translateY(0px);
-}
-50% {
-transform: translateY(10px);
-}
-100% {
-transform: translateY(0px);
-}
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: bounce 1s infinite;
+  color: #38b2ac;
 }
