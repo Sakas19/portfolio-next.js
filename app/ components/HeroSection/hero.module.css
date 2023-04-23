@@ -73,4 +73,25 @@
   justify-content: center;
   animation: bounce 1s infinite;
   color: #38b2ac;
+  margin-right: 20rem;
 }
+
+@keyframes arrowBounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.arrow {
+  animation-name: arrowBounce;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+

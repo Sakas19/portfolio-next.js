@@ -1,6 +1,7 @@
 import React from "react";
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 import Image from 'next/image'
+import styles from './Projects.module.css'
 
 const projects = [
   {
@@ -14,7 +15,7 @@ const projects = [
   {
     name: "Seceond react project",
     description: "PlatoIO is a to do list app that built using the PERN stack.",
-    image: "/",
+    image: "/project-2.png",
     github: "https://github.com/Sakas19/Assignment-2-React",
     link: "/",
   },
@@ -22,44 +23,51 @@ const projects = [
     name: "Third react project",
     description:
       "This is my third project as part of my assigmnet for reaxt course",
-    image: "/",
+    image: "/CandM.png",
     github: "https://github.com/Sakas19/cocktail-mocktail",
-    link: "cocktail-mocktail-1d19.vercel.app"
+    link: "https://cocktail-mocktail-1d19.vercel.app/"
+  },
+   {name: "Fourth react project",
+    description:
+      "This is my fourth project as part of my assigmnet for reaxt course",
+    image: "/Project-4.png",
+    github: "/"
   },
 ];
 
 const ProjectsSection = () => {
   return (
-    <section id="projects" className="projects">
-      <h1 className="projects__heading">Projects</h1>
+    <section id="projects" className={styles.projects}>
+      <h1 className={styles.heading}>Projects</h1>
 
-      <div className="projects__list">
+      <div className={styles.list}>
         {projects.map((project, idx) => (
-          <div key={idx} className="project">
-            <div className="project__image-container">
+          <div key={idx} className={styles.project}>
+            <div className={styles.imageContainer}>
               <a href={project.link} target="_blank" rel="noopener noreferrer">
+                <Image src={project.image} alt="" width={400} height={300} />
               </a>
             </div>
-            <div className="project__content">
-              <h2 className="project__title">{project.name}</h2>
-              <p className="project__description">{project.description}</p>
-              <div className="project__buttons">
+            <div className={styles.content}>
+              <h2 className={styles.title}>{project.name}</h2>
+              <p className={styles.description}>{project.description}</p>
+              <div className={styles.buttons}>
                 <a
-                  className="project__button project__button--github"
+                  className={`${styles.button} ${styles.githubButton}`}
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <BsGithub className="project__icon" />
+                  <BsGithub className={styles.icon} />
                   View Code
                 </a>
                 <a
-                  className="project__button project__button--link"
+                  className={`${styles.button} ${styles.linkButton}`}
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <BsArrowUpRightSquare className="project__icon" />
+                  <BsArrowUpRightSquare className={styles.icon} />
                   View Project
                 </a>
               </div>
@@ -72,4 +80,7 @@ const ProjectsSection = () => {
 };
 
 export default ProjectsSection;
+
+
+
 

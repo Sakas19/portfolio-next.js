@@ -20,7 +20,7 @@ export default function Hero() {
           </p>
 
           <div className={styles.arrow}>
-            <HiArrowDown size={35} />
+            <HiArrowDown size={45} />
           </div>
         </div>
       </div>
