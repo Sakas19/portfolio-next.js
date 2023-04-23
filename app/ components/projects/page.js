@@ -14,7 +14,7 @@ const projects = [
   },
   {
     name: "Seceond react project",
-    description: "PlatoIO is a to do list app that built using the PERN stack.",
+    description: "This is my first time useing chalk in this project",
     image: "/project-2.png",
     github: "https://github.com/Sakas19/Assignment-2-React",
     link: "/",
