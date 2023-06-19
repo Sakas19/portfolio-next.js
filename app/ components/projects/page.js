@@ -1,7 +1,7 @@
 import React from "react";
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 import Image from 'next/image'
-import styles from './Projects.module.css'
+import styles from './projects.module.css'
 
 const projects = [
   {
