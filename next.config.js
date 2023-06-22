@@ -1,9 +1,6 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  // Commented out the experimental configuration
+// next.config.js
+module.exports = {
   experimental: {
     appDir: true,
   },
-}
-
-module.exports = nextConfig;
+};
